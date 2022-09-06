@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../home.dart';
+//testando uma commit
 
 class HorizontalList extends StatefulWidget {
   HorizontalList();
