@@ -1,0 +1,169 @@
+ ListTile(
+                  leading: Padding(
+                    padding: EdgeInsets.only(bottom: 3, top: 4),
+                    child: Text(
+                      prod_name,
+                      style: TextStyle(
+                          color: Colors.green,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 13),
+                    ),
+                  ),
+                  title: Row(
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.only(bottom: 3),
+                        child: Text(
+                          "\$$prod_price",
+                          style: TextStyle(
+                              color: Colors.deepPurple,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 8,
+                      ),
+                      Padding(
+                        padding: EdgeInsets.only(bottom: 3),
+                        child: Text(
+                          "\$$prod_old_price",
+                          style: TextStyle(
+                              color: Colors.red,
+                              fontWeight: FontWeight.w800,
+                              decoration: TextDecoration.lineThrough),
+                        ),
+                      ),
+                    ],
+                  )),
+            ),
+
+quando se torna true, para de tremer a bolinha, 
+
+
+            Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    // Text(
+                    //   'nmr_sets'.tr,
+                    //   style: TextStyle(color: PersonalColors().gray, fontSize: 16.w),
+                    // ),
+                    // AnimatedShakeWidget(animationController, nameComponent: 'showTutorialStudentProfile', onTap: () {
+                    //   personalController.logAnalyticsEvent("StudentProfile_WhatIsThis");
+                    //   showModalBottomSheet(
+                    //       backgroundColor: Colors.transparent,
+                    //       context: context,
+                    //       isScrollControlled: true,
+                    //       builder: (context) => ContentBottomSheetScrollViewWidget(
+                    //         margin: EdgeInsets.only(top: 40.w),
+                    //         content: Padding(
+                    //             padding: EdgeInsets.symmetric(horizontal: 20.w),
+                    //             child: GenericQuestionsButtonWidget(
+                    //               gif: 'assets/lottie/pull_up.json',
+                    //               tittles: ['É possível customizar séries?' ,'Posso definir um valor padrão?', 'Como faço para definir o valor padrão?', 'Posso deixar a contagem de reps ou carga em aberto?'],
+                    //               description: ['Sim, você pode customizar todos os sets, reps e carga.', 'Sim! Todos os exercícios vão ser adicionados com o padrão que você definir.', 'Fácil! Na tela inicial do App, clique em "treinos" e depois em "Série/repetição padrão".', 'Sim! É só clicar para editar o set desejado e escrever o que quiser, por exemplo: 8 a 12.'],
+                    //             )),
+                    //       ));
+                    //   box.write('showTutorialStudentProfile', true);
+                    // }),
+                  ],
+                ),
+              ],
+            ),
+
+
+
+
+
+
+
+
+	SizedBox(
+            height: 15.w,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                'nmr_sets'.tr,
+                style: TextStyle(color: PersonalColors().gray, fontSize: 16.w),
+
+                //Condição por box storage
+              ),
+     // AnimatedShakeWidget(animationController, nameComponent: 'showTutorialStudentProfile', onTap: () {
+                    //   personalController.logAnalyticsEvent("StudentProfile_WhatIsThis");
+                    //   showModalBottomSheet(
+                    //       backgroundColor: Colors.transparent,
+                    //       context: context,
+                    //       isScrollControlled: true,
+                    //       builder: (context) => ContentBottomSheetScrollViewWidget(
+                    //         margin: EdgeInsets.only(top: 40.w),
+                    //         content: Padding(
+                    //             padding: EdgeInsets.symmetric(horizontal: 20.w),
+                    //             child: GenericQuestionsButtonWidget(
+                    //               gif: 'assets/lottie/pull_up.json',
+                    //               tittles: ['É possível customizar séries?' ,'Posso definir um valor padrão?', 'Como faço para definir o valor padrão?', 'Posso deixar a contagem de reps ou carga em aberto?'],
+                    //               description: ['Sim, você pode customizar todos os sets, reps e carga.', 'Sim! Todos os exercícios vão ser adicionados com o padrão que você definir.', 'Fácil! Na tela inicial do App, clique em "treinos" e depois em "Série/repetição padrão".', 'Sim! É só clicar para editar o set desejado e escrever o que quiser, por exemplo: 8 a 12.'],
+                    //             )),
+                    //       ));
+                    //   box.write('showTutorialStudentProfile', true);
+              }),
+            ],
+          ),
+          SizedBox(
+            height: 15.w,
+          ),
+
+
+  String _showTutorial() {
+    Container(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          Text(
+            'nmr_sets'.tr,
+            style: TextStyle(
+                color: PersonalColors().gray, fontSize: 16.w),
+
+            //Condição por box storage
+          ),
+          AnimatedShakeWidget(animationController,
+              nameComponent: 'showTutorialStudentProfile', onTap: () {
+                personalController.logAnalyticsEvent(
+                    "StudentProfile_WhatIsThis");
+                showModalBottomSheet(
+                    backgroundColor: Colors.transparent,
+                    context: context,
+                    isScrollControlled: true,
+                    builder: (context) =>
+                        ContentBottomSheetScrollViewWidget(
+                          margin: EdgeInsets.only(top: 40.w),
+                          content: Padding(
+                              padding: EdgeInsets.symmetric(
+                                  horizontal: 20.w),
+                              child: GenericQuestionsButtonWidget(
+                                gif: 'assets/lottie/pull_up.json',
+                                tittles: [
+                                  'É possível customizar séries?',
+                                  'Posso definir um valor padrão?',
+                                  'Como faço para definir o valor padrão?',
+                                  'Posso deixar a contagem de reps ou carga em aberto?'
+                                ],
+                                description: [
+                                  'Sim, você pode customizar todos os sets, reps e carga.',
+                                  'Sim! Todos os exercícios vão ser adicionados com o padrão que você definir.',
+                                  'Fácil! Na tela inicial do App, clique em "treinos" e depois em "Série/repetição padrão".',
+                                  'Sim! É só clicar para editar o set desejado e escrever o que quiser, por exemplo: 8 a 12.'
+                                ],
+                              )),
+                        ));
+                box.write('showTutorialStudentProfile', false);
+              }),
+          SizedBox(
+            height: 15.w,
+          ),
+        ],
+      ),
+    );
+  }
